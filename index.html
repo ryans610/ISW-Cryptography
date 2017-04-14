@@ -81,7 +81,7 @@
                     <ul>
                         <li>Decryption</li>
                         <li>將密文轉換回明文</li>
-                        <li></li>
+                        <li>通常需要擁有解密用的金鑰</li>
                     </ul>
                 </section>
                 <section>
@@ -93,6 +93,32 @@
                     </ul>
                 </section>
                 <section>
+                    <section>
+                        <h2>編碼</h2>
+                    </section>
+                    <section>
+                        <h3>編碼</h3>
+                        <ul>
+                            <li>Encoding</li>
+                            <li>將原始資訊轉換為位元組所組成的資訊</li>
+                            <li>在傳輸、儲存、運算時較方便</li>
+                            <li>各種資訊格式(文字、圖片、影片等)都有各自的編碼方式</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>字元編碼</h3>
+                        <ul>
+                            <li>專門用於字元的編碼規則</li>
+                            <li>又稱為字元集</li>
+                            <li>常見的有ASCII，UTF-8，Big5等</li>
+                            <li>只有字元集涵蓋範圍可以正常轉換，否則會出現亂碼</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>雜湊</h2>
+                    </section>
                     <section>
                         <h3>雜湊</h3>
                         <ul>
@@ -111,18 +137,63 @@
                         </ul>
                     </section>
                     <section>
+                        <h3>常見雜湊用途</h3>
+                        <ul>
+                            <li>資料完整性驗證</li>
+                            <li>隱私資料(登入密碼)儲存/驗證</li>
+                        </ul>
+                    </section>
+                    <section>
                         <h3>雜湊碰撞</h3>
                         <ul>
-                            <li>輸入值無限，輸出值有限</li>
+                            <li>輸入值長度不限，輸出結果有限</li>
                             <li>不同輸入相同輸出則為碰撞</li>
                             <li>越容易碰撞則該雜湊演算法越不安全</li>
                         </ul>
                     </section>
                     <section>
-                        <h3>常見雜湊用途</h3>
+                        <h3>常見雜湊演算法</h3>
                         <ul>
-                            <li>資料傳輸驗證</li>
-                            <li>登入密碼儲存/驗證</li>
+                            <li>MD5</li>
+                            <li>SHA-1</li>
+                            <li>SHA-256</li>
+                            <li>CRC32</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>雜湊破解</h3>
+                        <ul>
+                            <li>暴力破解</li>
+                            <li>彩虹表</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>對稱與非對稱加密</h2>
+                    </section>
+                    <section>
+                        <h3>使用金鑰加密</h3>
+                        <ul>
+                            <li>加密演算法使用金鑰做為運算過程中的關鍵</li>
+                            <li>例如將資料編碼與金鑰做位元運算</li>
+                            <li>不會因為演算法公開而被破解</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>對稱加密</h3>
+                        <ul>
+                            <li>加密與解密使用同一金鑰</li>
+                            <li>在金鑰的保管與傳送產生問題</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>非對稱加密</h3>
+                        <ul>
+                            <li>產生一對難以回推的數學相關的金鑰</li>
+                            <li>如兩個超大質數相乘</li>
+                            <li>公開一個金鑰(公鑰)用於加密</li>
+                            <li>使用私鑰解密</li>
                         </ul>
                     </section>
                 </section>
